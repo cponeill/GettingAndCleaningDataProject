@@ -73,7 +73,7 @@ runAnalysis <- function() {
   names(tidyMeans)[-c(1,2)] <- paste0("Mean", names(tidyMeans)[-c(1,2)])
 
   # Write file
-  write.table(tidyMeans, "tidyMeans.txt", row.names = FALSE)
+  write.table(tidyMeans, "tidy.txt", row.names = FALSE)
 
   # Also return data
   tidyMeans
